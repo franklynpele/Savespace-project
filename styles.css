@@ -1,0 +1,537 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&family=Marcellus+SC&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  background: rgba(255, 255, 255, 0);
+}
+header {
+  background: rgba(246.07, 248.52, 255, 1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 80px;
+}
+.logo {
+  display: flex;
+  flex-direction: column;
+}
+.logo img {
+  padding: 20px 20px 0 20px;
+}
+.logo p {
+  font-family: "Marcellus SC", serif;
+  font-size: 20px;
+  color: #0247fe;
+  margin: 10px 0 10px 0;
+}
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+nav ul li {
+  list-style-type: none;
+  padding: 5px;
+  font-size: 16px;
+  font-family: "Manrope", sans-serif;
+  font-weight: bold;
+}
+nav ul li:not(.contact-us) {
+  margin-right: 3rem;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #1e1e1e;
+  position: relative;
+}
+nav .nav-bar li a:not(#home):before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #023bd4;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 250ms ease-in;
+}
+nav .nav-bar li a:not(#home):hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+#home {
+  color: #0247fe;
+  position: relative;
+}
+#home::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: currentColor;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 250ms ease-in;
+}
+#home:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+.btns {
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid rgba(1.67, 59.17, 211.67, 1);
+  background: rgba(255, 255, 255, 0);
+  color: rgba(1.67, 59.17, 211.67, 1);
+  font-family: "Manrope", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  position: relative;
+  z-index: 1;
+}
+.btns::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.342);
+  top: 0;
+  left: 0;
+  z-index: -1;
+  border-radius: 8px;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 250ms ease-in;
+}
+.btns:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+header .btns {
+  margin-right: 1rem;
+}
+.crt-free-account {
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #0247fe;
+  background: rgba(1.67, 59.17, 211.67, 1);
+  color: #fff;
+  font-family: "Manrope", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  position: relative;
+  z-index: 1;
+}
+
+.crt-free-account:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #7191e9;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  border-radius: 8px;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 250ms ease-in;
+}
+.crt-free-account:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.layout-one {
+  padding: 30px 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+}
+#we-save {
+  background: rgba(1.67, 59.17, 211.67, 1);
+  color: #fff;
+  padding: 4px;
+}
+h1 {
+  font-family: "Manrope", sans-serif;
+  font-size: 45px;
+}
+p {
+  font-family: "Manrope", sans-serif;
+  font-size: 18px;
+  margin: 20px 0 20px 0;
+  color: #434343;
+}
+.layout-one-info {
+  margin-right: 50px;
+}
+#freeaccout-btn {
+  margin-bottom: 30px;
+}
+.get-app {
+  display: flex;
+}
+.get-app .apple {
+  margin-right: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.get-app .apple img {
+  margin-right: 0.4rem;
+}
+.get-app .playstore {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.get-app .playstore img {
+  margin-right: 0.7rem;
+}
+.layout-two {
+  padding: 30px 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: fit-content;
+}
+.layout-two-info {
+  margin-left: 70px;
+}
+.offer-info-item {
+  display: flex;
+  align-items: center;
+}
+.offer-info-item img {
+  margin-right: 1rem;
+}
+.layout-three {
+  padding: 30px 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: fit-content;
+}
+.layout-three-info {
+  margin-right: 70px;
+  max-width: fit-content;
+}
+
+.layout-three-box {
+  padding: 13px;
+  max-width: fit-content;
+  -ms-box-shadow: 0px 4px 24px 1px rgba(0, 0, 0, 0.1);
+  -o-box-shadow: 0px 4px 24px 1px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 4px 24px 1px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 4px 24px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 24px 1px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 1);
+}
+.recent-trnx {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+h2 {
+  font-family: "Manrope", sans-serif;
+}
+#see-all {
+  color: #023bd4;
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+}
+.recent-trnx-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.recent-trnx-list img {
+  margin-right: 1rem;
+}
+.recent-trnx-list div {
+  margin-right: 2rem;
+}
+.recent-trnx-list p {
+  color: #8e8e8e;
+}
+.trxn-par {
+  margin: 0 0 20px 0;
+  font-size: 14px;
+}
+.date-par {
+  font-size: 12px;
+  text-align: right;
+  white-space: nowrap;
+}
+.layout-four {
+  padding: 30px 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+}
+.layout-four img {
+  margin-right: 70px;
+}
+.btn-learn-more {
+  padding: 10px 40px;
+}
+.layout-five {
+  padding: 30px 60px 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+}
+.layout-five-info {
+  margin-right: 70px;
+}
+.review-sct {
+  display: flex;
+  flex-direction: row;
+}
+.review-sct img {
+  margin-right: 3rem;
+}
+#ade {
+  color: #000000;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: "Manrope", sans-serif;
+}
+.layout-five-box {
+  background: rgba(238.86, 243.28, 255, 1);
+  border-radius: 15px;
+}
+footer {
+  background: rgb(0, 38, 143);
+  color: #fff;
+  font-family: "Manrope", sans-serif;
+}
+.footer {
+  padding: 30px 80px;
+  display: flex;
+  justify-content: space-between;
+  background: rgb(0, 38, 143);
+  color: #fff;
+}
+.footer-logo {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+}
+.footer-logo img {
+  padding: 20px 20px 0 20px;
+}
+.footer-logo p {
+  font-family: "Marcellus SC", serif;
+  font-size: 20px;
+  color: #fff;
+  margin: 10px 0 10px 0;
+}
+.footer-par {
+  color: #fff;
+  font-size: 18px;
+}
+.social-icons {
+  display: flex;
+}
+.social-icons a {
+  text-decoration: none;
+}
+.social-icons i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 20px;
+  color: #fff;
+  border: 1.99px solid #fff;
+}
+.social-icons a:nth-child(1),
+.social-icons a:nth-child(2) {
+  margin-right: 8px;
+}
+.social-icons i:hover {
+  color: #fff;
+  font-size: 25px;
+  transform: scale(1.04);
+  transition: all 0.3s;
+  background: rgba(9, 235, 199, 0.52);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.5px);
+  -webkit-backdrop-filter: blur(7.5px);
+  border: 1px solid rgba(9, 235, 199, 1);
+}
+
+footer ul li {
+  margin: 20px;
+  list-style-type: none;
+}
+footer ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-family: "manrope";
+  font-size: 18px;
+  white-space: nowrap;
+}
+footer #bold {
+  font-weight: bold;
+  font-size: 20px;
+}
+footer .info-par {
+  display: unset;
+  text-align: center;
+}
+#copyrights {
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-family: "Marcellus SC", serif;
+  margin: 0;
+  padding-bottom: 15px;
+}
+
+/*media query*/
+@media screen and (min-width: 300px) and (max-width: 768px) {
+  *{
+    box-sizing: border-box;
+  }
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30px;
+  }
+  nav ul li {
+    white-space: nowrap;
+  }
+  nav ul li:not(.contact-us) {
+    margin-right: 3rem;
+  }
+  .btns:not(.nav-btns button) {
+   width: fit-content;
+   font-size: 10px;
+  }
+  .nav-btns button {
+    font-size: 10px;
+    margin: 10px;
+
+  }
+  .crt-free-account {
+    width: fit-content;
+    font-size: 10px;
+  }
+  h1 {
+    font-size: 25px;
+  }
+  p{
+    font-size: 14px;
+  }
+  .layout-one {
+    padding: 0 30px;
+    flex-direction: column-reverse;
+    max-width: fit-content;
+  }
+  .info-sect2 img{
+    width: 300px;
+  }
+  .layout-one-info {
+    margin-right: 0;
+    margin-top: 30px;
+    max-width: fit-content;
+  }
+  .get-app{
+    flex-direction: column;
+    gap: 10px;
+  }
+  .layout-two {
+    padding: 0 30px;
+    flex-direction: column;
+    max-width: fit-content;
+    margin-top: 30px;
+  }
+  .layout-two div #phone-mockup {
+    height: 300px;
+  }
+  .layout-two-info {
+    margin-left: 0;
+    max-width: 300px;
+  }
+  .layout-three {
+    padding: 0 30px;
+    flex-direction: column;
+    max-width: fit-content;
+    margin-top: 30px;
+  }
+  .layout-three-info{
+    margin-bottom: 10px;
+  }
+  .layout-three-box {
+    max-width: fit-content;
+  }
+  .date-par {
+    white-space: unset;
+  }
+
+  .layout-four {
+    padding: 0 30px;
+    flex-direction: column;
+    max-width: fit-content;
+    margin-top: 30px;
+  }
+  .layout-four div img {
+    height: 400px;
+  }
+  .layout-five {
+    padding: 0 30px;
+    flex-direction: column;
+    max-width: 100%;
+    margin: 30px 0;
+  }
+  .layout-five-box,#bar-chart{
+    width: 300px;
+  }
+  .footer {
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    max-width: 100%;
+  }
+
+}
+
+
+
+@media screen and (min-width: 200px) and (max-width: 500px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+  nav ul li:not(.contact-us) {
+    margin-right: 0rem;
+  }
+  .nav-btns {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+}
