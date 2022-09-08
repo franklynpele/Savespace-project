@@ -451,7 +451,9 @@ footer .info-par {
   .layout-one {
     padding: 0 30px;
     flex-direction: column-reverse;
-    max-width: fit-content;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
   }
   .info-sect2 img {
     width: 300px;
@@ -468,20 +470,23 @@ footer .info-par {
   .layout-two {
     padding: 0 30px;
     flex-direction: column;
-    max-width: fit-content;
+    max-width: 100%;
     margin-top: 30px;
+    justify-content: center;
+    align-items: center;
   }
   .layout-two div #phone-mockup {
     height: 300px;
   }
   .layout-two-info {
     margin-left: 0;
-max-width: fit-content;
   }
   .layout-three {
     padding: 0 30px;
     flex-direction: column;
-    margin-top: 30px;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
   }
   .layout-three-info {
     margin-bottom: 30px;
