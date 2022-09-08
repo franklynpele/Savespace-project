@@ -78,7 +78,7 @@ nav .nav-bar li a:not(#home):hover::before {
   bottom: 0;
   width: 100%;
   height: 2px;
-  background-color: currentColor;
+  background-color: #000000;
   transform: scaleX(0);
   transform-origin: right;
   transition: transform 250ms ease-in;
@@ -345,6 +345,9 @@ footer {
   color: #fff;
   font-size: 18px;
 }
+.footer-logo-info .footer-par{
+  max-width: 300px;
+}
 .social-icons {
   display: flex;
 }
@@ -386,8 +389,7 @@ footer ul li a {
   color: #fff;
   text-decoration: none;
   font-family: "manrope";
-  font-size: 18px;
-  white-space: nowrap;
+  font-size: 16px;
 }
 footer #bold {
   font-weight: bold;
@@ -409,7 +411,7 @@ footer .info-par {
 
 /*media query*/
 @media screen and (min-width: 300px) and (max-width: 768px) {
-  *{
+  * {
     box-sizing: border-box;
   }
   header {
@@ -426,13 +428,12 @@ footer .info-par {
     margin-right: 3rem;
   }
   .btns:not(.nav-btns button) {
-   width: fit-content;
-   font-size: 10px;
+    width: fit-content;
+    font-size: 10px;
   }
   .nav-btns button {
     font-size: 10px;
     margin: 10px;
-
   }
   .crt-free-account {
     width: fit-content;
@@ -441,7 +442,7 @@ footer .info-par {
   h1 {
     font-size: 25px;
   }
-  p{
+  p {
     font-size: 14px;
   }
   .layout-one {
@@ -449,7 +450,7 @@ footer .info-par {
     flex-direction: column-reverse;
     max-width: fit-content;
   }
-  .info-sect2 img{
+  .info-sect2 img {
     width: 300px;
   }
   .layout-one-info {
@@ -457,7 +458,7 @@ footer .info-par {
     margin-top: 30px;
     max-width: fit-content;
   }
-  .get-app{
+  .get-app {
     flex-direction: column;
     gap: 10px;
   }
@@ -472,7 +473,7 @@ footer .info-par {
   }
   .layout-two-info {
     margin-left: 0;
-    max-width: 300px;
+max-width: fit-content;
   }
   .layout-three {
     padding: 0 30px;
@@ -480,8 +481,9 @@ footer .info-par {
     max-width: fit-content;
     margin-top: 30px;
   }
-  .layout-three-info{
-    margin-bottom: 10px;
+  .layout-three-info {
+    margin-bottom: 30px;
+    margin-right: 0;
   }
   .layout-three-box {
     max-width: fit-content;
@@ -498,6 +500,7 @@ footer .info-par {
   }
   .layout-four div img {
     height: 400px;
+    margin-right: 0;
   }
   .layout-five {
     padding: 0 30px;
@@ -505,19 +508,29 @@ footer .info-par {
     max-width: 100%;
     margin: 30px 0;
   }
-  .layout-five-box,#bar-chart{
+  .layout-five-info{
+    margin-right: 0;
+  }
+  .layout-five-box,
+  #bar-chart {
     width: 300px;
   }
   .footer {
     flex-direction: column;
-    align-content: center;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     max-width: 100%;
   }
-
+  .footer-logo-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .features {
+    text-align: center;
+  }
 }
-
-
 
 @media screen and (min-width: 200px) and (max-width: 500px) {
   nav ul {
