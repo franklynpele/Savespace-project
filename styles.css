@@ -445,6 +445,9 @@ footer .info-par {
   p {
     font-size: 14px;
   }
+  h2 {
+    font-size: 15px;
+  }
   .layout-one {
     padding: 0 30px;
     flex-direction: column-reverse;
@@ -478,7 +481,6 @@ max-width: fit-content;
   .layout-three {
     padding: 0 30px;
     flex-direction: column;
-    max-width: fit-content;
     margin-top: 30px;
   }
   .layout-three-info {
